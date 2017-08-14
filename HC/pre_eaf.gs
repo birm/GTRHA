@@ -6,6 +6,7 @@ function onSubmit(e) {
   // (if you wanted to format the values first, you could to that here)
   var hcoEmail = "hc@rbirm.us";
   var toEmail = vals['4'][0];
+  var subject = 'Write ' + seq + 'on your receipt'; 
   // Sometimes mail errors happen, so be ready
   try{
     // Email the values and Sequence Number
