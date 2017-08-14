@@ -8,7 +8,7 @@ function named2html(namedValues){
   for (key in keys){
     // add a cell to the end for each field in the response
     head += "<td>" + key + "</td>";
-    body += "<td>" + key + "</td>";
+    body += "<td>" + namedValues[key][0] + "</td>";
   }
   // return after finishing up the html table (close the rows, open and close the table)
   return "<table>" + head + "</tr></thead>" + body + "</tr></tbody>" + "</table>";
